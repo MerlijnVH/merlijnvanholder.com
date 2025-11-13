@@ -1,7 +1,7 @@
-baseURL: https://example.org/
+baseURL: https://merlijnvanholder.com/
 languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+title: Merlijn Van Holder
+theme: ["Shadow"]
 caches:
   images:
     dir: :cacheDir/images
