@@ -5,3 +5,9 @@ theme: ["Shadow"]
 caches:
   images:
     dir: :cacheDir/images
+menu:
+  main:
+    - identifier: readme
+      name: Read Me
+      url: /readme/
+      weight: 10

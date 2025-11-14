@@ -16,5 +16,14 @@
       <description>&lt;p&gt;I&amp;rsquo;ve been wanting to bring my website back for a while now, having been less active on social media these years. In an era of brain rot, the time has come we return to the personal website &amp;amp; blog.&lt;/p&gt;
 &lt;p&gt;The annual bill for my webhosting was substantial, leading me to cancel it at some point. My previous websites were usually made with Wordpress, which provides a nice back-end for managing content. However, the requirement for PHP, a MySQL database, and ideally frequent updates to keep everything secure always felt too bloated for me.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Read Me</title>
+      <link>https://merlijnvanholder.com/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/readme/</guid>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;m Merlijn, a game developer &amp;amp; programmer from Belgium that plays a lot of video games.&lt;/p&gt;
+&lt;p&gt;Professionally, I divide my time between the 3 companies I founded. Mithra Games, my one-man indie game studio. &lt;a href=&#34;https://pandafish.be/&#34;&gt;Pandafish&lt;/a&gt;, a web development studio, and &lt;a href=&#34;https://mybeats.eu/&#34;&gt;MyB&amp;rsquo;eats&lt;/a&gt;, an app and loyalty platform.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been tinkering with games since elementary school, building levels for Doom, Duke Nukem 3D, Quake and Half-Life. Later as a technical artist in the games industry. All in all I&amp;rsquo;ve worked on games for web, mobile, desktop and VR. These days I&amp;rsquo;m just doing my own thing with &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
