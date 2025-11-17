@@ -14,7 +14,7 @@ I've moved to [Hugo](https://gohugo.io/), a static site generator. Assets are pr
 
 If you're on Windows, it takes just a few PowerShell commands:
 
-```PowerShell {style=catppuccin-frappe}
+```powershell {style=catppuccin-frappe}
 winget install Hugo.Hugo
 hugo new site my-website
 cd my-website

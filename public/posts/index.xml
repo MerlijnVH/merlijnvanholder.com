@@ -17,6 +17,14 @@
 &lt;p&gt;The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Tactical RPG Prototype</title>
+      <link>https://merlijnvanholder.com/posts/tactical-rpg-prototype/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/posts/tactical-rpg-prototype/</guid>
+      <description>&lt;p&gt;I spent a few days prototyping a turn-based tactical RPG, a genre I&amp;rsquo;ve grown to love. &lt;a href=&#34;https://store.steampowered.com/app/7650/XCOM_Terror_From_the_Deep/&#34;&gt;X-COM: Terror from the Deep&lt;/a&gt; hooked me when I was a kid, and only later did I truly come to appreciate it. It&amp;rsquo;s great to see the genre making a comeback with titles like &lt;a href=&#34;https://store.steampowered.com/app/237990/The_Banner_Saga/&#34;&gt;The Banner Saga&lt;/a&gt; and &lt;a href=&#34;https://store.steampowered.com/app/200510/XCOM_Enemy_Unknown/&#34;&gt;X-COM: Enemy Unknown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer&amp;rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Foreign Legion: Buckets of Blood Steam Release</title>
       <link>https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
