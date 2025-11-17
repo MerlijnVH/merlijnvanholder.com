@@ -5,12 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tactical RPG Prototype | Merlijn Van Holder</title>
+<title>Ludum Dare #29 – Ocean Rescue | Merlijn Van Holder</title>
 <meta name="keywords" content="">
-<meta name="description" content="I spent a few days prototyping a turn-based tactical RPG, a genre I&rsquo;ve grown to love. X-COM: Terror from the Deep hooked me when I was a kid, and only later did I truly come to appreciate it. It&rsquo;s great to see the genre making a comeback with titles like The Banner Saga and X-COM: Enemy Unknown.
-As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer&rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.">
+<meta name="description" content="Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it&rsquo;s common to work solo.
+With the theme &ldquo;Beneath the Surface&rdquo;, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert&rsquo;s &ldquo;Dune&rdquo;, part Moby-Dick.
+I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.">
 <meta name="author" content="">
-<link rel="canonical" href="https://merlijnvanholder.com/posts/tactical-rpg-prototype/">
+<link rel="canonical" href="https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.219418a9a15db4ff5bf6f54651ea8bae6910f0e87cc6f2ffa2c9ed993892386f.css" integrity="sha256-IZQYqaFdtP9b9vVGUeqLrmkQ8Oh8xvL/osntmTiSOG8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.gif" type="image/gif">
 <link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
@@ -19,7 +20,7 @@ As a proper tactical game, players choose their actions turn-by-turn: moving, at
 <link rel="mask-icon" href="favicon.gif">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://merlijnvanholder.com/posts/tactical-rpg-prototype/">
+<link rel="alternate" hreflang="en" href="https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,20 +72,22 @@ As a proper tactical game, players choose their actions turn-by-turn: moving, at
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://merlijnvanholder.com/posts/tactical-rpg-prototype/">
+</script><meta property="og:url" content="https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/">
   <meta property="og:site_name" content="Merlijn Van Holder">
-  <meta property="og:title" content="Tactical RPG Prototype">
-  <meta property="og:description" content="I spent a few days prototyping a turn-based tactical RPG, a genre I’ve grown to love. X-COM: Terror from the Deep hooked me when I was a kid, and only later did I truly come to appreciate it. It’s great to see the genre making a comeback with titles like The Banner Saga and X-COM: Enemy Unknown.
-As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer’s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.">
+  <meta property="og:title" content="Ludum Dare #29 – Ocean Rescue">
+  <meta property="og:description" content="Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it’s common to work solo.
+With the theme “Beneath the Surface”, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert’s “Dune”, part Moby-Dick.
+I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2014-02-14T00:00:00+00:00">
-    <meta property="article:modified_time" content="2014-02-14T00:00:00+00:00">
+    <meta property="article:published_time" content="2014-04-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2014-04-28T00:00:00+00:00">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tactical RPG Prototype">
-<meta name="twitter:description" content="I spent a few days prototyping a turn-based tactical RPG, a genre I&rsquo;ve grown to love. X-COM: Terror from the Deep hooked me when I was a kid, and only later did I truly come to appreciate it. It&rsquo;s great to see the genre making a comeback with titles like The Banner Saga and X-COM: Enemy Unknown.
-As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer&rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.">
+<meta name="twitter:title" content="Ludum Dare #29 – Ocean Rescue">
+<meta name="twitter:description" content="Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it&rsquo;s common to work solo.
+With the theme &ldquo;Beneath the Surface&rdquo;, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert&rsquo;s &ldquo;Dune&rdquo;, part Moby-Dick.
+I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.">
 
 
 <script type="application/ld+json">
@@ -101,8 +104,8 @@ As a proper tactical game, players choose their actions turn-by-turn: moving, at
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Tactical RPG Prototype",
-      "item": "https://merlijnvanholder.com/posts/tactical-rpg-prototype/"
+      "name": "Ludum Dare #29 – Ocean Rescue",
+      "item": "https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/"
     }
   ]
 }
@@ -111,20 +114,20 @@ As a proper tactical game, players choose their actions turn-by-turn: moving, at
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Tactical RPG Prototype",
-  "name": "Tactical RPG Prototype",
-  "description": "I spent a few days prototyping a turn-based tactical RPG, a genre I\u0026rsquo;ve grown to love. X-COM: Terror from the Deep hooked me when I was a kid, and only later did I truly come to appreciate it. It\u0026rsquo;s great to see the genre making a comeback with titles like The Banner Saga and X-COM: Enemy Unknown.\nAs a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer\u0026rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.\n",
+  "headline": "Ludum Dare #29 – Ocean Rescue",
+  "name": "Ludum Dare #29 – Ocean Rescue",
+  "description": "Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it\u0026rsquo;s common to work solo.\nWith the theme \u0026ldquo;Beneath the Surface\u0026rdquo;, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert\u0026rsquo;s \u0026ldquo;Dune\u0026rdquo;, part Moby-Dick.\nI started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.\n",
   "keywords": [
     
   ],
-  "articleBody": "I spent a few days prototyping a turn-based tactical RPG, a genre I’ve grown to love. X-COM: Terror from the Deep hooked me when I was a kid, and only later did I truly come to appreciate it. It’s great to see the genre making a comeback with titles like The Banner Saga and X-COM: Enemy Unknown.\nAs a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer’s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.\nThe prototype has a functioning turn-based combat system on a auto-generated grid.\nGrid-based is the tried-and-true approach, so that’s where I started. I quickly blocked out a level in Blender using a tile set. Through code, the game computes a node grid for visualization and pathfinding: it calculates the level bounds, divides the area into nodes, and initializes all nodes high above the level. For each node, it raycasts downward: the first surface it hits determines where the node is placed.\nA visualization of raycasting downwards per grid cell and placing a node.\nThese nodes serve as the foundation for the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack by inspecting surrounding nodes.\nIf I find some time next week, I’d love to create some graphics and add more features. For now, it’s just a prototype.\n",
-  "wordCount" : "244",
+  "articleBody": "Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it’s common to work solo.\nWith the theme “Beneath the Surface”, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert’s “Dune”, part Moby-Dick.\nI started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.\nBy Saturday afternoon a rough version was playable.\nBecause I began late on Saturday, it became clear I had to cut features and lean harder into the theme.\nEnemy boats and the weapon mechanic were stripped out first. Collectables became survivors adrift with safety buoys. Meanwhile, the monster stalks the player, waiting for a chance to gulp down the ship with as many survivors as possible. Why does the monster favour the ship over the survivors? Ships have more fibre.\nTo keep players from wandering too far or running into the edge of the world, I added a fuel mechanic. The tank refills when you return home, perfect for dropping off rescued survivors at the same time.\nBy Sunday night the game had taken shape with colourful graphics.\nI finished work around 3 AM on Monday morning and submitted the build, just under the deadline. I’m happy with it. There are a few minor bugs and plenty I could improve, but that’s the charm of a game jam.\nThe game runs on the Unity engine, with all of the game code written in C#. For the 3D models, I used Blender, and generated all the sound effects with BFXR.\nSo far the reviews are very positive. You can download the game and check out the source code on the Ludum Dare entry page.\n",
+  "wordCount" : "329",
   "inLanguage": "en",
-  "datePublished": "2014-02-14T00:00:00Z",
-  "dateModified": "2014-02-14T00:00:00Z",
+  "datePublished": "2014-04-28T00:00:00Z",
+  "dateModified": "2014-04-28T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://merlijnvanholder.com/posts/tactical-rpg-prototype/"
+    "@id": "https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/"
   },
   "publisher": {
     "@type": "Organization",
@@ -180,21 +183,25 @@ As a proper tactical game, players choose their actions turn-by-turn: moving, at
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Tactical RPG Prototype
+      Ludum Dare #29 – Ocean Rescue
     </h1>
-    <div class="post-meta"><span title='2014-02-14 00:00:00 +0000 UTC'>February 14, 2014</span>
+    <div class="post-meta"><span title='2014-04-28 00:00:00 +0000 UTC'>April 28, 2014</span>
 
 </div>
   </header> 
-  <div class="post-content"><p>I spent a few days prototyping a turn-based tactical RPG, a genre I&rsquo;ve grown to love. <a href="https://store.steampowered.com/app/7650/XCOM_Terror_From_the_Deep/">X-COM: Terror from the Deep</a> hooked me when I was a kid, and only later did I truly come to appreciate it. It&rsquo;s great to see the genre making a comeback with titles like <a href="https://store.steampowered.com/app/237990/The_Banner_Saga/">The Banner Saga</a> and <a href="https://store.steampowered.com/app/200510/XCOM_Enemy_Unknown/">X-COM: Enemy Unknown</a>.</p>
-<p>As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer&rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.</p>
-<p><img alt="Prototype" loading="lazy" src="/posts/tactical-rpg-prototype/media/tactical-rpg-prototype-01.png">
-<em>The prototype has a functioning turn-based combat system on a auto-generated grid.</em></p>
-<p>Grid-based is the tried-and-true approach, so that&rsquo;s where I started. I quickly blocked out a level in Blender using a tile set. Through code, the game computes a node grid for visualization and pathfinding: it calculates the level bounds, divides the area into nodes, and initializes all nodes high above the level. For each node, it raycasts downward: the first surface it hits determines where the node is placed.</p>
-<p><img alt="Prototype" loading="lazy" src="/posts/tactical-rpg-prototype/media/tactical-rpg-prototype-02.gif">
-<em>A visualization of raycasting downwards per grid cell and placing a node.</em></p>
-<p>These nodes serve as the foundation for the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack by inspecting surrounding nodes.</p>
-<p>If I find some time next week, I&rsquo;d love to create some graphics and add more features. For now, it&rsquo;s just a prototype.</p>
+  <div class="post-content"><p>Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it&rsquo;s common to work solo.</p>
+<p>With the theme &ldquo;Beneath the Surface&rdquo;, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert&rsquo;s &ldquo;Dune&rdquo;, part Moby-Dick.</p>
+<p>I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.</p>
+<p><img alt="Prototype" loading="lazy" src="/posts/ludum-dare-29-ocean-rescue/media/ludum-dare-ocean-rescue-01.png">
+<em>By Saturday afternoon a rough version was playable.</em></p>
+<p>Because I began late on Saturday, it became clear I had to cut features and lean harder into the theme.</p>
+<p>Enemy boats and the weapon mechanic were stripped out first. Collectables became survivors adrift with safety buoys. Meanwhile, the monster stalks the player, waiting for a chance to gulp down the ship with as many survivors as possible. Why does the monster favour the ship over the survivors? Ships have more fibre.</p>
+<p>To keep players from wandering too far or running into the edge of the world, I added a fuel mechanic. The tank refills when you return home, perfect for dropping off rescued survivors at the same time.</p>
+<p><img alt="Prototype" loading="lazy" src="/posts/ludum-dare-29-ocean-rescue/media/ludum-dare-ocean-rescue-02.png">
+<em>By Sunday night the game had taken shape with colourful graphics.</em></p>
+<p>I finished work around 3 AM on Monday morning and submitted the build, just under the deadline. I&rsquo;m happy with it. There are a few minor bugs and plenty I could improve, but that&rsquo;s the charm of a game jam.</p>
+<p>The game runs on the Unity engine, with all of the game code written in C#. For the 3D models, I used Blender, and generated all the sound effects with <a href="https://bfxr.net/">BFXR</a>.</p>
+<p>So far the reviews are very positive. You can <a href="https://ludumdare.com/compo/ludum-dare-29/?action=preview&amp;uid=14952">download the game and check out the source code on the Ludum Dare entry page</a>.</p>
 
 
   </div>

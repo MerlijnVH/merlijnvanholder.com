@@ -2,6 +2,8 @@
 date: '2014-02-14'
 draft: false
 title: 'Tactical RPG Prototype'
+categories:
+- Game Dev
 ---
 
 I spent a few days prototyping a turn-based tactical RPG, a genre I've grown to love. [X-COM: Terror from the Deep](https://store.steampowered.com/app/7650/XCOM_Terror_From_the_Deep/) hooked me when I was a kid, and only later did I truly come to appreciate it. It's great to see the genre making a comeback with titles like [The Banner Saga](https://store.steampowered.com/app/237990/The_Banner_Saga/) and [X-COM: Enemy Unknown](https://store.steampowered.com/app/200510/XCOM_Enemy_Unknown/).
@@ -16,6 +18,6 @@ Grid-based is the tried-and-true approach, so that's where I started. I quickly 
 ![Prototype](media/tactical-rpg-prototype-02.gif)
 _A visualization of raycasting downwards per grid cell and placing a node._
 
-These nodes serve as foundation for the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack by inspecting surrounding nodes.
+These nodes serve as the foundation for the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack by inspecting surrounding nodes.
 
 If I find some time next week, I'd love to create some graphics and add more features. For now, it's just a prototype.

@@ -17,6 +17,15 @@
 &lt;p&gt;The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Ludum Dare #29 – Ocean Rescue</title>
+      <link>https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/posts/ludum-dare-29-ocean-rescue/</guid>
+      <description>&lt;p&gt;Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a game around a single theme. Unlike the Global Game Jam, it&amp;rsquo;s common to work solo.&lt;/p&gt;
+&lt;p&gt;With the theme &amp;ldquo;Beneath the Surface&amp;rdquo;, I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert&amp;rsquo;s &amp;ldquo;Dune&amp;rdquo;, part Moby-Dick.&lt;/p&gt;
+&lt;p&gt;I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tactical RPG Prototype</title>
       <link>https://merlijnvanholder.com/posts/tactical-rpg-prototype/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
