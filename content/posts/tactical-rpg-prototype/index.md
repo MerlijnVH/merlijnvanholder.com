@@ -16,6 +16,6 @@ Grid-based is the tried-and-true approach, so that's where I started. I quickly 
 ![Prototype](media/tactical-rpg-prototype-02.gif)
 _A visualization of raycasting downwards per grid cell and placing a node._
 
-These nodes serve as foundation the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack another by inspecting surrounding nodes.
+These nodes serve as foundation for the rest of the game logic. They enable A* pathfinding between points and allow the game check whether a character can attack by inspecting surrounding nodes.
 
 If I find some time next week, I'd love to create some graphics and add more features. For now, it's just a prototype.
