@@ -13,8 +13,20 @@
       <link>https://merlijnvanholder.com/posts/hello-world/</link>
       <pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://merlijnvanholder.com/posts/hello-world/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been wanting to bring my website back for a while now, having been less active on social media these years. In an era of brain rot, the time has come we return to the personal website &amp;amp; blog.&lt;/p&gt;
-&lt;p&gt;The annual bill for my webhosting was substantial, leading me to cancel it at some point. My previous websites were usually made with Wordpress, which provides a nice back-end for managing content. However, the requirement for PHP, a MySQL database, and ideally frequent updates to keep everything secure always felt too bloated for me.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve wanted to bring my website back for a while, especially as I&amp;rsquo;ve become less active on social media. In an era of endless feeds and brain rot, returning to a personal website and blog feels right.&lt;/p&gt;
+&lt;p&gt;The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foreign Legion: Buckets of Blood Steam Release</title>
+      <link>https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/</link>
+      <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/</guid>
+      <description>&lt;p&gt;After six intense months of development, the game I&amp;rsquo;ve been pouring my energy into has finally been &lt;a href=&#34;https://store.steampowered.com/app/36000/Foreign_Legion_Buckets_of_Blood/&#34;&gt;released on Steam&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Foreign Legion: Buckets of Blood is a fast-paced, stylized third‑person shooter. Missions range from defending an oil pipeline against waves of attackers to escorting a bus packed with tourists through hostile territory.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Oil Pipeline Mission&#34; loading=&#34;lazy&#34; src=&#34;https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/media/foreign-legion-screenshot-01.png&#34;&gt;
+&lt;em&gt;I created most of the levels and 3D environment art.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Tourist Bus Mission&#34; loading=&#34;lazy&#34; src=&#34;https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/media/foreign-legion-screenshot-02.png&#34;&gt;
+&lt;em&gt;The dawn escort mission is one of the prettier levels I built.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Read Me</title>

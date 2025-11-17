@@ -6,28 +6,28 @@ categories:
 - Personal
 ---
 
-I've been wanting to bring my website back for a while now, having been less active on social media these years. In an era of brain rot, the time has come we return to the personal website & blog.
+I've wanted to bring my website back for a while, especially as I've become less active on social media. In an era of endless feeds and brain rot, returning to a personal website and blog feels right.
 
-The annual bill for my webhosting was substantial, leading me to cancel it at some point. My previous websites were usually made with Wordpress, which provides a nice back-end for managing content. However, the requirement for PHP, a MySQL database, and ideally frequent updates to keep everything secure always felt too bloated for me.
+The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.
 
-I've now moved over to [Hugo](https://gohugo.io/), a static site generator. All your assets are pre-compiled locally before it goes online, which means even your [GitHub](https://github.com/) repository can now be your webhost. Simple _and_ free. I'll be moving some of my old content over gradually.
+I've moved to [Hugo](https://gohugo.io/), a static site generator. Assets are precompiled locally before deployment, and a [GitHub](https://github.com/) repository can host the site. Simple _and_ free. I'll gradually move some of my old blog posts over.
 
-If you're using Windows, all it takes is a few commands through PowerShell.
+If you're on Windows, it takes just a few PowerShell commands:
 
 ```PowerShell {style=catppuccin-frappe}
-> winget install Hugo.Hugo
-> hugo new site my-website
-> cd my-website
-> hugo new content/posts/hello-world.md
-> hugo server # Starts a server at localhost:1313
+winget install Hugo.Hugo
+hugo new site my-website
+cd my-website
+hugo new content/posts/hello-world/index.md
+hugo server # Starts a server at http://localhost:1313
 ```
 
-Hugo's local server provides hot reloading, allowing you to see changes without having to refresh your browser. A huge (hugo?) W.
+Hugo's local server provides hot reloading, so you can see changes without refreshing your browser. A huge (hugo?) win.
 
-Being able to write content in [Markdown](https://www.markdownguide.org/cheat-sheet/) was one of the main attraction points to me. Simple, clean, and no metadata gunking up your files from WYSIWYG editors. VSCode and most other IDE's can preview it, too.
+Writing in [Markdown](https://www.markdownguide.org/cheat-sheet/) is one of the main draws: simple, clean, and no WYSIWYG metadata cluttering the install. Visual Studio Code and most other IDEs can preview it, too.
 
-One thing you learn getting older is that simplicity beats complexity, any day of the week. Sure, big frameworks are fun. If you have many of them however, maintaining and updating them all, is not.
+One thing you learn as you get older: simplicity beats complexity. Big frameworks are fun; maintaining a pile of them is not.
 
-That's why I hope to show some of my work and write more about [Godot](https://godotengine.org/) in the future, the simple yet powerful game engine that rekindled my love for game development.
+I plan to share more of my work and write about [Godot](https://godotengine.org/), the simple yet powerful game engine that rekindled my love for making games.
 
 See you around, stranger. 👋
