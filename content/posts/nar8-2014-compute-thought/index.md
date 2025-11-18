@@ -11,16 +11,16 @@ Compute Thought is a short cyberpunk point-and-click adventure game created for 
 ![Prototype](media/nar8-2014-compute-thought-01.png)
 _The opening scene is my favourite, but went through many iterations._
 
-The game centers on a detective investigating the murder of a scientist, in a world where humans and androids coexist (uneasily). Classic cyberpunk stories like Blade Runner and Ghost in the Shell inspired me.
+The game centers on a detective investigating the murder, in a world where humans and androids coexist (uneasily). Classic cyberpunk stories like Blade Runner and Ghost in the Shell inspired me.
 
 ## Development
 
-I initially tried to stage a dramatic outdoor crime scene: rain, reflective streets, harsh neon. What I pictured never matched what appeared on screen; the outdoor set felt empty, unfocused. After several attempts I pivoted to indoor spaces exclusively: tighter, more readable, easier to finish.
+I initially tried to stage a dramatic outdoor crime scene: rain, reflective streets, harsh neon lights. What I pictured never matched what appeared on screen; the outdoor set felt empty, unfocused. After several attempts I pivoted to indoor spaces exclusively: tighter, more readable, easier to finish.
 
 Originally the game flow was: character introduction, learn the interface, travel to the crime scene, burst through the door (pistol drawn) to confront the murderer. That last action sequence was cut later to keep scope under control; simplification let me ship a coherent vertical slice instead of an unfinished set piece.
 
 ![Prototype](media/nar8-2014-compute-thought-02.png)
-_The first prototype, our detective standing over the body._
+_The first prototype, the detective standing over the body._
 
 ![Prototype](media/nar8-2014-compute-thought-03.png)
 _The prototype grew into a night‑market scene which I later abandoned._
@@ -29,12 +29,12 @@ _The prototype grew into a night‑market scene which I later abandoned._
 
 Implementing the point‑and‑click layer was the most fun. Hovering over an interactable object switches to a duplicate of the 3D mesh, but with an additive shader, offset slightly to create an animated parallax effect.
 
-Clicking an object queues a pathfinding action to have the character walk over, then opens a dialogue window. All dialogue was authored in Twine for fast iteration. Each Twine file is assigned to an object in the editor.
+Clicking an object queues a pathfinding action to have the character walk over, then opens a dialogue window. All dialogue was authored in [Twine for fast iteration](https://twinery.org/). Each Twine file is assigned to an object in the editor.
 
 ![Prototype](media/nar8-2014-compute-thought-04.png)
 _Scene management inside the Unity editor._
 
-Late in development I added a computer terminal. This is where the detective investigates the crime scene and the victim's files. It accepts real keyboard input, plays tactile clicky typing sounds, validates input against a list of possible commands, renders text off‑screen on a texture, then draws it in the game world. There was groundwork for browsing around the full hard-drive that I couldn't flesh out before the deadline.
+Late in development I added a computer terminal. This is where the detective investigates the crime scene and the victim's files. It accepts real keyboard input, plays tactile clicky typing sounds, validates input against a list of possible commands, renders text off‑screen on a texture, then draws it in the game world. There was groundwork for browsing around the full hard-drive too, but I couldn't flesh it out before the deadline.
 
 ## Environment & Characters
 

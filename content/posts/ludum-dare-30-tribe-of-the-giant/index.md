@@ -6,9 +6,9 @@ categories:
 - Game Dev
 ---
 
-Ludum Dare is a fantastic challenge: [make a game from scratch in 48 hours](https://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=14952). Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.
+Ludum Dare is a fantastic challenge: [make a game from scratch in 48 hours](https://ludumdare.com/). Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.
 
-Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there's some value in learning new software under pressure, it's better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up [Chronolapse](https://code.google.com/archive/p/chronolapse/) to capture [a timelapse](https://www.youtube.com/watch?v=PuTk-GsvBXs) and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.
+Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there's some value in learning new software under pressure, it's better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts. I set up [Chronolapse](https://code.google.com/archive/p/chronolapse/) to capture [a timelapse](https://www.youtube.com/watch?v=PuTk-GsvBXs) and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.
 
 ## Saturday – Stuck
 
@@ -25,14 +25,14 @@ _Herding your little monsters into the portal, towards the rival village._
 
 On Sunday morning I started to pin down the gameplay. I kept polishing the environment, but it wasn't until evening that the core loop clicked: two islands attacking each other, with a giant monster defending its village. I wrote most of the fundamental gameplay code during the final hours.
 
-![Prototype](media/ludum-dare-tribe-of-the-giant-01.png)
+![Prototype](media/ludum-dare-tribe-of-the-giant-02.png)
 _Keeping the pesky rival tribe out of your village didn't feel as responsive as I wanted._
 
-The key asset in game development is knowing all the quick & dirty tricks. Take the giant for example: I started rigging and animating but became nervous, knowing how time‑consuming animation can be. After wrestling with animation rigs and bone weights, I simply animated all the monsters by code instead, just rocking them back and forth on a sine wave. Those little math tricks save a ton of time.
+The key asset in game development is knowing all the quick & dirty tricks. Take the giant for example: I started rigging and animating but became nervous knowing how time‑consuming animation can be. After wrestling with animation rigs and bone weights, I simply animated all the monsters by code instead, just rocking them back and forth on a sine wave. Those little math tricks save a ton of time.
 
 Most of the code from the last six hours is pretty horrifying. Despite that, the game appears to be glitch‑free. You go into Ludum Dare assuming your code is throwaway, so it doesn't really matter.
 
-![Prototype](media/ludum-dare-tribe-of-the-giant-02.png)
+![Prototype](media/ludum-dare-tribe-of-the-giant-03.png)
 _The portals turned out really well, flinging monsters to the other side as they step through._
 
 ## Monday – Ship It!

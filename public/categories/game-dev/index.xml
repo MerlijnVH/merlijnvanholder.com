@@ -13,8 +13,8 @@
       <link>https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/</link>
       <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
       <guid>https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/</guid>
-      <description>&lt;p&gt;Ludum Dare is a fantastic challenge: &lt;a href=&#34;https://ludumdare.com/compo/ludum-dare-30/?action=preview&amp;amp;uid=14952&#34;&gt;make a game from scratch in 48 hours&lt;/a&gt;. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.&lt;/p&gt;
-&lt;p&gt;Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there&amp;rsquo;s some value in learning new software under pressure, it&amp;rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up &lt;a href=&#34;https://code.google.com/archive/p/chronolapse/&#34;&gt;Chronolapse&lt;/a&gt; to capture &lt;a href=&#34;https://www.youtube.com/watch?v=PuTk-GsvBXs&#34;&gt;a timelapse&lt;/a&gt; and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ludum Dare is a fantastic challenge: &lt;a href=&#34;https://ludumdare.com/&#34;&gt;make a game from scratch in 48 hours&lt;/a&gt;. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.&lt;/p&gt;
+&lt;p&gt;Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there&amp;rsquo;s some value in learning new software under pressure, it&amp;rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts. I set up &lt;a href=&#34;https://code.google.com/archive/p/chronolapse/&#34;&gt;Chronolapse&lt;/a&gt; to capture &lt;a href=&#34;https://www.youtube.com/watch?v=PuTk-GsvBXs&#34;&gt;a timelapse&lt;/a&gt; and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>#Nar8 2014 – Compute Thought</title>
@@ -24,7 +24,7 @@
       <description>&lt;p&gt;Compute Thought is a short cyberpunk point-and-click adventure game created for #Nar8, a narrative‑focused game jam. I usually lean toward gameplay and level design rather than writing, so this project was a deliberate exercise in story building. You can &lt;a href=&#34;https://merlijnvh.itch.io/compute-thought&#34;&gt;play it on itch.io&lt;/a&gt; or &lt;a href=&#34;https://github.com/MerlijnVH/Compute-Thought&#34;&gt;browse the source code on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Prototype&#34; loading=&#34;lazy&#34; src=&#34;https://merlijnvanholder.com/posts/nar8-2014-compute-thought/media/nar8-2014-compute-thought-01.png&#34;&gt;
 &lt;em&gt;The opening scene is my favourite, but went through many iterations.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The game centers on a detective investigating the murder of a scientist, in a world where humans and androids coexist (uneasily). Classic cyberpunk stories like Blade Runner and Ghost in the Shell inspired me.&lt;/p&gt;</description>
+&lt;p&gt;The game centers on a detective investigating the murder, in a world where humans and androids coexist (uneasily). Classic cyberpunk stories like Blade Runner and Ghost in the Shell inspired me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ludum Dare #29 – Ocean Rescue</title>
