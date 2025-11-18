@@ -18,9 +18,6 @@ It's sort of an interactive museum piece, really.
 ![VR](media/les-aspirateurs-vr-game-taiwan-02.jpg)
 _Both young and old came to experience the VR game._
 
-![VR](media/Screenshot%202025-11-18%20230345.png)
-_Both young and old came to experience the VR game._
-
 ![VR](media/les-aspirateurs-vr-game-taiwan-03.jpg)
 _Players move between green waypoints, which helps prevent motion sickness._
 
