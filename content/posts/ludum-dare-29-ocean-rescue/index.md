@@ -10,7 +10,7 @@ Ludum Dare #29 ran from April 25th – 27th, a 48-hour jam where anyone builds a
 
 With the theme "Beneath the Surface", I set out to make a game about a giant monster lurking in the depths, part sandworm from Frank Herbert's "Dune", part Moby-Dick.
 
-I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this helps to cover up any art assets look rough around the edges.
+I started with a seafaring concept: you sail around collecting capsules drifting on the water. Other boats attack you, while the monster tries to swallow you whole. The game takes place at night, this covers up any art assets that look too rough around the edges.
 
 ![Prototype](media/ludum-dare-ocean-rescue-01.png)
 _By Saturday afternoon a rough version was playable._

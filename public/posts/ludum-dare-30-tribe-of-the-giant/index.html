@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ludum Dare #30 – Tribe of the Giant | Merlijn Van Holder</title>
+<meta name="keywords" content="">
+<meta name="description" content="Ludum Dare is a fantastic challenge: make a game from scratch in 48 hours. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.
+Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there&rsquo;s some value in learning new software under pressure, it&rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up Chronolapse to capture a timelapse and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.">
+<meta name="author" content="">
+<link rel="canonical" href="https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.219418a9a15db4ff5bf6f54651ea8bae6910f0e87cc6f2ffa2c9ed993892386f.css" integrity="sha256-IZQYqaFdtP9b9vVGUeqLrmkQ8Oh8xvL/osntmTiSOG8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="favicon.gif" type="image/gif">
+<link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
+<link rel="icon" type="image/gif" sizes="32x32" href="favicon.gif">
+<link rel="apple-touch-icon" href="favicon.gif">
+<link rel="mask-icon" href="favicon.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/">
+  <meta property="og:site_name" content="Merlijn Van Holder">
+  <meta property="og:title" content="Ludum Dare #30 – Tribe of the Giant">
+  <meta property="og:description" content="Ludum Dare is a fantastic challenge: make a game from scratch in 48 hours. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.
+Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there’s some value in learning new software under pressure, it’s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up Chronolapse to capture a timelapse and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2014-08-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2014-08-24T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ludum Dare #30 – Tribe of the Giant">
+<meta name="twitter:description" content="Ludum Dare is a fantastic challenge: make a game from scratch in 48 hours. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.
+Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there&rsquo;s some value in learning new software under pressure, it&rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up Chronolapse to capture a timelapse and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://merlijnvanholder.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Ludum Dare #30 – Tribe of the Giant",
+      "item": "https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ludum Dare #30 – Tribe of the Giant",
+  "name": "Ludum Dare #30 – Tribe of the Giant",
+  "description": "Ludum Dare is a fantastic challenge: make a game from scratch in 48 hours. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.\nRunning into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there\u0026rsquo;s some value in learning new software under pressure, it\u0026rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up Chronolapse to capture a timelapse and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Ludum Dare is a fantastic challenge: make a game from scratch in 48 hours. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.\nRunning into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there’s some value in learning new software under pressure, it’s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up Chronolapse to capture a timelapse and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.\nSaturday – Stuck With the theme “Connecting Worlds” I set out to make a small twin-stick shooter. Monsters would attack through portals from other worlds that you can jump through. After a few hours, I wasn’t feeling it.\nI spent most of Saturday exploring ideas and building quick prototypes. Luckily, people watching my livestream (something I wasn’t used to) kept me motivated. Having an audience watch your every move is both daunting and energizing.\nBy Saturday night I’d found a visual style I liked. I checked George Broussard’s stream from time to time, super fun. Talking with others going through the same crazy weekend helps keep you sane. The “Share on Twitter” button was a trick I picked up from George; I include it in all my mobile games now.\nHerding your little monsters into the portal, towards the rival village.\nSunday – Build It On Sunday morning I started to pin down the gameplay. I kept polishing the environment, but it wasn’t until evening that the core loop clicked: two islands attacking each other, with a giant monster defending its village. I wrote most of the fundamental gameplay code during the final hours.\nKeeping the pesky rival tribe out of your village didn’t feel as responsive as I wanted.\nThe key asset in game development is knowing all the quick \u0026 dirty tricks. Take the giant for example: I started rigging and animating but became nervous, knowing how time‑consuming animation can be. After wrestling with animation rigs and bone weights, I simply animated all the monsters by code instead, just rocking them back and forth on a sine wave. Those little math tricks save a ton of time.\nMost of the code from the last six hours is pretty horrifying. Despite that, the game appears to be glitch‑free. You go into Ludum Dare assuming your code is throwaway, so it doesn’t really matter.\nThe portals turned out really well, flinging monsters to the other side as they step through.\nMonday – Ship It! Because of time zones, the deadline lands a bit differently for everyone. For me, it was 3 AM on Monday. With two hours to spare and gameplay working well enough, I used Unity 4.6’s new UI system to set up a menu with game instructions.\nIt’s easy to forget how long it takes to submit the final build of a game: adding screenshots, writing descriptions, even coming up with a title. As the deadline crept up, I discovered the Mac build was crashing, too. The final hours are always chaos, but I got lucky and found a quick fix.\nI sank ~32 hours into development and I’m pleased with the result: about 1,000 lines of code, different character models, a handful of environment props, and a few sounds generated with BFXR. Some mechanics, such as the rhythmic movement of the monsters, aren’t what I hoped for; after plenty of tweaking, they still don’t feel right. I’m considering turning it into a full game, and I’ll revisit the mechanics then.\nIf you’re interested in game development, just try to make a game. If you’re having trouble finishing one, Ludum Dare is perfect.\nYou can download the game or watch the timelapse instead.\n",
+  "wordCount" : "653",
+  "inLanguage": "en",
+  "datePublished": "2014-08-24T00:00:00Z",
+  "dateModified": "2014-08-24T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://merlijnvanholder.com/posts/ludum-dare-30-tribe-of-the-giant/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Merlijn Van Holder",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://merlijnvanholder.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://merlijnvanholder.com/" accesskey="h" title="Merlijn Van Holder (Alt + H)">Merlijn Van Holder</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://merlijnvanholder.com/readme/" title="Read Me">
+                    <span>Read Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Ludum Dare #30 – Tribe of the Giant
+    </h1>
+    <div class="post-meta"><span title='2014-08-24 00:00:00 +0000 UTC'>August 24, 2014</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Ludum Dare is a fantastic challenge: <a href="https://ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14952">make a game from scratch in 48 hours</a>. Every year more people join, resulting in thousands of entries by the end of the weekend. This was my second time participating.</p>
+<p>Running into time-wasting problems is dangerous when you only have two days. Preparing before you start is key. While there&rsquo;s some value in learning new software under pressure, it&rsquo;s better to use tools you already know: the C# programming language, Blender, and Unity in my case. Prepare your work environment before the weekend starts, too. I set up <a href="https://code.google.com/archive/p/chronolapse/">Chronolapse</a> to capture <a href="https://www.youtube.com/watch?v=PuTk-GsvBXs">a timelapse</a> and OBS for livestreaming on Twitch. Avoid nasty surprises once you start, nothing derails a jam like broken software.</p>
+<h2 id="saturday--stuck">Saturday – Stuck<a hidden class="anchor" aria-hidden="true" href="#saturday--stuck">#</a></h2>
+<p>With the theme &ldquo;Connecting Worlds&rdquo; I set out to make a small twin-stick shooter. Monsters would attack through portals from other worlds that you can jump through. After a few hours, I wasn&rsquo;t feeling it.</p>
+<p>I spent most of Saturday exploring ideas and building quick prototypes. Luckily, people watching my livestream (something I wasn&rsquo;t used to) kept me motivated. Having an audience watch your every move is both daunting and energizing.</p>
+<p>By Saturday night I&rsquo;d found a visual style I liked. I checked <a href="https://twitter.com/Georgeb3dr">George Broussard&rsquo;s</a> stream from time to time, super fun. Talking with others going through the same crazy weekend helps keep you sane. The &ldquo;Share on Twitter&rdquo; button was a trick I picked up from George; I include it in all my mobile games now.</p>
+<p><img alt="Prototype" loading="lazy" src="/posts/ludum-dare-30-tribe-of-the-giant/media/ludum-dare-tribe-of-the-giant-01.gif">
+<em>Herding your little monsters into the portal, towards the rival village.</em></p>
+<h2 id="sunday--build-it">Sunday – Build It<a hidden class="anchor" aria-hidden="true" href="#sunday--build-it">#</a></h2>
+<p>On Sunday morning I started to pin down the gameplay. I kept polishing the environment, but it wasn&rsquo;t until evening that the core loop clicked: two islands attacking each other, with a giant monster defending its village. I wrote most of the fundamental gameplay code during the final hours.</p>
+<p><img alt="Prototype" loading="lazy" src="media/ludum-dare-tribe-of-the-giant-01.png">
+<em>Keeping the pesky rival tribe out of your village didn&rsquo;t feel as responsive as I wanted.</em></p>
+<p>The key asset in game development is knowing all the quick &amp; dirty tricks. Take the giant for example: I started rigging and animating but became nervous, knowing how time‑consuming animation can be. After wrestling with animation rigs and bone weights, I simply animated all the monsters by code instead, just rocking them back and forth on a sine wave. Those little math tricks save a ton of time.</p>
+<p>Most of the code from the last six hours is pretty horrifying. Despite that, the game appears to be glitch‑free. You go into Ludum Dare assuming your code is throwaway, so it doesn&rsquo;t really matter.</p>
+<p><img alt="Prototype" loading="lazy" src="/posts/ludum-dare-30-tribe-of-the-giant/media/ludum-dare-tribe-of-the-giant-02.png">
+<em>The portals turned out really well, flinging monsters to the other side as they step through.</em></p>
+<h2 id="monday--ship-it">Monday – Ship It!<a hidden class="anchor" aria-hidden="true" href="#monday--ship-it">#</a></h2>
+<p>Because of time zones, the deadline lands a bit differently for everyone. For me, it was 3 AM on Monday. With two hours to spare and gameplay working well enough, I used Unity 4.6&rsquo;s new UI system to set up a menu with game instructions.</p>
+<p>It&rsquo;s easy to forget how long it takes to submit the final build of a game: adding screenshots, writing descriptions, even coming up with a title. As the deadline crept up, I discovered the Mac build was crashing, too. The final hours are always chaos, but I got lucky and found a quick fix.</p>
+<p>I sank ~32 hours into development and I&rsquo;m pleased with the result: about 1,000 lines of code, different character models, a handful of environment props, and a few sounds generated with BFXR. Some mechanics, such as the rhythmic movement of the monsters, aren&rsquo;t what I hoped for; after plenty of tweaking, they still don&rsquo;t feel right. I&rsquo;m considering turning it into a full game, and I&rsquo;ll revisit the mechanics then.</p>
+<p>If you&rsquo;re interested in game development, just try to make a game. If you&rsquo;re having trouble finishing one, Ludum Dare is perfect.</p>
+<p>You can <a href="https://ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14952">download the game</a> or <a href="https://www.youtube.com/watch?v=PuTk-GsvBXs">watch the timelapse instead</a>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://merlijnvanholder.com/">Merlijn Van Holder</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
