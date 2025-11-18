@@ -1,7 +1,7 @@
 ---
 date: '2025-11-14'
 draft: false
-title: 'Hello World'
+title: 'Migrating Website To Hugo'
 categories:
 - Personal
 ---
