@@ -2,6 +2,9 @@
 date: '2018-10-10'
 draft: false
 title: 'Les Aspirateurs VR Game Taiwan'
+categories:
+- Game Dev
+- Travel
 ---
 
 I've been active in the VR community for a while, being one of the original kickstarters for the Oculus DK1 VR headset. I was totally sold on the tech since E3 2012, thanks to [John Carmack's Doom 3 ski goggles tech demo](https://www.youtube.com/watch?v=GVDXXfbz3QE). I've owned about every Oculus headset and dev kit since then.
