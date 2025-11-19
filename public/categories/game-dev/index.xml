@@ -60,6 +60,14 @@
 &lt;p&gt;As a proper tactical game, players choose their actions turn-by-turn: moving, attacking, or guarding. During the computer&amp;rsquo;s turn, the AI identifies the nearest player character and moves in to attack. The battle ends when one side is defeated.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Learning Microsoft XNA Game Engine</title>
+      <link>https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/</guid>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.&lt;/p&gt;
+&lt;p&gt;XNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Foreign Legion: Buckets of Blood Steam Release</title>
       <link>https://merlijnvanholder.com/posts/foreign-legion-buckets-of-blood-steam-release/</link>
       <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Learning Microsoft XNA Game Engine | Merlijn Van Holder</title>
+<meta name="keywords" content="">
+<meta name="description" content="Recently I&rsquo;ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.
+XNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.">
+<meta name="author" content="">
+<link rel="canonical" href="https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.219418a9a15db4ff5bf6f54651ea8bae6910f0e87cc6f2ffa2c9ed993892386f.css" integrity="sha256-IZQYqaFdtP9b9vVGUeqLrmkQ8Oh8xvL/osntmTiSOG8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="favicon.gif" type="image/gif">
+<link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
+<link rel="icon" type="image/gif" sizes="32x32" href="favicon.gif">
+<link rel="apple-touch-icon" href="favicon.gif">
+<link rel="mask-icon" href="favicon.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/">
+  <meta property="og:site_name" content="Merlijn Van Holder">
+  <meta property="og:title" content="Learning Microsoft XNA Game Engine">
+  <meta property="og:description" content="Recently I’ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.
+XNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-04-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2010-04-08T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Learning Microsoft XNA Game Engine">
+<meta name="twitter:description" content="Recently I&rsquo;ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.
+XNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://merlijnvanholder.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Learning Microsoft XNA Game Engine",
+      "item": "https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Learning Microsoft XNA Game Engine",
+  "name": "Learning Microsoft XNA Game Engine",
+  "description": "Recently I\u0026rsquo;ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.\nXNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Recently I’ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.\nXNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.\nWith it I’m building a 2D platformer inspired by the 1993 puzzle‑platformer The Lost Vikings (by Silicon \u0026 Synapse, now Blizzard). You control two characters: a young adventurer who can run, jump, and fight; and a ghost who can slip through obstacles and possess enemies (but can’t interact physically otherwise).\nUsing XNA means starting almost from scratch: no editor, no built‑in collision detection or animation system. Aside from the renderer, you craft all the tools you need. That constraint is exactly why it’s such a good learning environment, hands‑on engine fundamentals without first sinking years into a custom C++ engine black hole.\nMy current tech demo implements tilemaps, a sprite-based animation system, and AABB (axis‑aligned bounding box) collision detection, checking whether two rectangles overlap by testing their edges on both X and Y.\nI’m also building a level editor by using a .NET Windows Forms project, drawing the XNA runtime on a canvas in the window. Basically the entire game is playable inside the Windows editor, a feature I stole from Unity. Levels export to XML, straightforward and easy to read for an Xbox 360 (which supports XML natively).\nEditing a level in my custom level editor.\n",
+  "wordCount" : "272",
+  "inLanguage": "en",
+  "datePublished": "2010-04-08T00:00:00Z",
+  "dateModified": "2010-04-08T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://merlijnvanholder.com/posts/learning-microsoft-xna-game-engine/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Merlijn Van Holder",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://merlijnvanholder.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://merlijnvanholder.com/" accesskey="h" title="Merlijn Van Holder (Alt + H)">Merlijn Van Holder</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://merlijnvanholder.com/readme/" title="Read Me">
+                    <span>Read Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Learning Microsoft XNA Game Engine
+    </h1>
+    <div class="post-meta"><span title='2010-04-08 00:00:00 +0000 UTC'>April 8, 2010</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Recently I&rsquo;ve been teaching myself the C# programming language, together with the Microsoft XNA game engine.</p>
+<p>XNA is really a freeware toolkit rather than a full engine. Microsoft launched this to make hobby and indie game development approachable. It sits on top of the .NET Framework and can target both Windows and the Xbox 360. For an indie developer these days, XNA feels like the most practical way to getting something onto Xbox Live Arcade.</p>
+<p>With it I&rsquo;m building a 2D platformer inspired by the 1993 puzzle‑platformer The Lost Vikings (by Silicon &amp; Synapse, now Blizzard). You control two characters: a young adventurer who can run, jump, and fight; and a ghost who can slip through obstacles and possess enemies (but can&rsquo;t interact physically otherwise).</p>
+<p>Using XNA means starting almost from scratch: no editor, no built‑in collision detection or animation system. Aside from the renderer, you craft all the tools you need. That constraint is exactly why it&rsquo;s such a good learning environment, hands‑on engine fundamentals without first sinking years into a custom C++ engine black hole.</p>
+<p>My current tech demo implements tilemaps, a sprite-based animation system, and AABB (axis‑aligned bounding box) collision detection, checking whether two rectangles overlap by testing their edges on both X and Y.</p>
+<p>I&rsquo;m also building a level editor by using a .NET Windows Forms project, drawing the XNA runtime on a canvas in the window. Basically the entire game is playable inside the Windows editor, a feature I stole from Unity. Levels export to XML, straightforward and easy to read for an Xbox 360 (which supports XML natively).</p>
+<p><img alt="Umbra Editor" loading="lazy" src="media/editor.png">
+<em>Editing a level in my custom level editor.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://merlijnvanholder.com/">Merlijn Van Holder</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
