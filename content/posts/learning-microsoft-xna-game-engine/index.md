@@ -18,5 +18,5 @@ My current tech demo implements tilemaps, a sprite-based animation system, and A
 
 I'm also building a level editor by using a .NET Windows Forms project, drawing the XNA runtime on a canvas in the window. Basically the entire game is playable inside the Windows editor, a feature I stole from Unity. Levels export to XML, straightforward and easy to read for an Xbox 360 (which supports XML natively).
 
-![Umbra Editor](media/editor.png)
-_Editing a level in my custom level editor._
+![XNA Editor](media/learning-microsoft-xna-game-engine-01.png)
+_Editing a level in my custom "Umbra" level editor._
