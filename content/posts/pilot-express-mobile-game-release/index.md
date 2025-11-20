@@ -24,6 +24,8 @@ I also created a few set pieces that simply loop infinitely in the background. T
 
 The game runs on the Unity engine, I wrote all the code in C#, and every 3D asset was modeled with Blender and optimized for mobile. What started as a small summer prototype turned into a fun little project where I handled design, art, development and released the game a month later.
 
+The game is free to play, but uses Unity Ads to display a video advertisement everytime you crash the plane.
+
 The goal of the game is simple and straightforward: beat your highest score and fly as far as possible without crashing. In the future, I'd love to add unlockable planes with different handling, more scenery to keep runs fresh, and a few extra surprises to reward mastery of the game. If you give it a spin, I'd love to hear your feedback!
 
 ![Pilot Express](media/pilot-express-mobile-game-release-03.png)
