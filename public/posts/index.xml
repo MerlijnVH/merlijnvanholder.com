@@ -17,6 +17,14 @@
 &lt;p&gt;The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Pilot Panic Android Release</title>
+      <link>https://merlijnvanholder.com/posts/pilot-panic-android-release/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://merlijnvanholder.com/posts/pilot-panic-android-release/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working on a new mobile game, out today on &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.MithraGames.PilotPanic&amp;amp;hl=en&#34;&gt;Google Play&lt;/a&gt;! The App Store version will follow soon. I had to hit an April deadline or my Google Play account would be closed for inactivity. Maintaining mobile games is&amp;hellip; not always fun.&lt;/p&gt;
+&lt;p&gt;Pilot Panic is the successor to my earlier mobile game, &lt;a href=&#34;https://merlijnvanholder.com/posts/pilot-express-mobile-game-release/&#34;&gt;Pilot Express&lt;/a&gt;. I originally built it in Unity, but I&amp;rsquo;ve been learning Godot over the past few months. Porting a previous game felt like the perfect learning opportunity, though I ended up rebuilding almost everything. The game is now fully 2D, which makes the gameplay clearer and, in my opinion, looks better than the old low‑poly 3D style.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Quake 25th Anniversary</title>
       <link>https://merlijnvanholder.com/posts/quake-25th-anniversary/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
