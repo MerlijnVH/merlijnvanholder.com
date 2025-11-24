@@ -10,6 +10,8 @@ I've wanted to bring my website back for a while, especially as I've become less
 
 The annual web hosting bill added up, so I eventually cancelled it. I used to run WordPress, which does offer a nice back-end for managing content. But needing PHP, a MySQL database, and frequent updates to keep things secure always felt too heavy for my needs.
 
+![Hugo](media/hugo-logo-wide.svg)
+
 I've moved to [Hugo](https://gohugo.io/), a static site generator. Assets are precompiled locally before deployment, and a [GitHub](https://github.com/) repository can host the site. Simple _and_ free. I'll gradually move some of my old blog posts over.
 
 If you're on Windows, it takes just a few PowerShell commands:
