@@ -4,14 +4,22 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
 
-.about-recent {
+#profile img {
+	float: right;
+	clear: both;
+	width: 250px;
+	margin: 32px 0 16px 32px;
+	border-radius: 8px;
+}
+
+#readme .favorites {
 	display: flex;
 	margin: 0 0 16px 0;
 	flex-wrap: nowrap;
 	gap: 16px;
 }
 
-.about-recent span {
+#readme .favorites span {
 	word-break: keep-all;
 	font-size: 24px;
 	line-height: 32px;
@@ -19,47 +27,41 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 	margin-right: 32px;
 }
 
-.about-recent span small {
+#readme .favorites span small {
 	white-space: nowrap;
 	font-size: 12px;
 }
 
-.about-recent img {
+#readme .gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0 0 16px 0;
+	gap: 16px;
+}
+
+#readme .gallery img {
 	width: 100%;
 	height: auto;
 }
 
-/* Break the about-profile in two columns on small resolutions */
-
-.about {
-    display: flex;
-	flex-wrap: nowrap;
-	gap: 32px;
-}
-
-.about-profile {
-	flex: 0 0 auto;
-	width: 250px;
-}
-
-.about-profile img {
-	margin: 30px 0;
-	border-radius: 8px;
-}
-
-/* Mobile responsive: stack vertically on small screens */
-@media (max-width: 768px) {
-	.about {
-		flex-direction: column;
-		gap: 16px;
-	}
-	
-	.about-profile {
+@media (max-width: 600px) {
+	#profile img {
+		display: block;
+		clear: both;
 		width: 100%;
-		padding: 16px 0;
+		margin: 32px 0 32px 0;
 	}
-	
-	.about-profile img {
-		width: 100%;
+
+	#readme .favorites span {
+		font-size: 24px;
+	}
+
+	#readme .favorites span small {
+		font-size: 16px;
+	}
+
+	#readme .gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 }

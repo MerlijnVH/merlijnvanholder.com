@@ -34,18 +34,29 @@
 	{{- end }}
 
 	{{- if .Content }}
-	<div class="about">
+	<div id="profile">
 		<div class="post-content">
 			{{- if not (.Param "disableAnchoredHeadings") }}
 			{{- partial "anchored_headings.html" .Content -}}
 			{{- else }}{{ .Content }}{{ end }}
 		</div>
-
-		<div class="about-profile">
-			<img src="/readme/profile.webp" alt="A photograph of Merlijn in Tyrol, Italy" />
-		</div>
 	</div>
 	{{- end }}
 </article>
+
+<div id="readme">
+	<div class="favorites">
+		<div class="gallery">
+			<span><small>some of my</small> Favorite Games</span>
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2310/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2668510/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/526870/library_600x900.jpg" />
+			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962130/library_600x900.jpg" />
+		</div>
+	</div>
+</div>
 
 {{- end }}{{/* end main */}}
