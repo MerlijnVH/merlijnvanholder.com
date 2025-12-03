@@ -98,6 +98,42 @@
 </script>
 {{- end }}
 
+<script>
+    // Hide every img inside .gallery div
+    // In theory they are already hidden by CSS, but just to be sure
+
+    document.querySelectorAll('.gallery img').forEach((img) => {
+        img.style.display = 'none';
+    });
+
+    // Now show some of them randomly per .gallery div
+
+    document.querySelectorAll('.gallery').forEach((gallery) => {
+        const numToShow = 7;
+
+        const images = gallery.querySelectorAll('img');
+        const indices = [];
+        while (indices.length < Math.min(numToShow, images.length)) {
+            const randIndex = Math.floor(Math.random() * images.length);
+            if (!indices.includes(randIndex)) {
+                indices.push(randIndex);
+            }
+        }
+
+        indices.forEach((i) => {
+            images[i].style.display = 'inline-block';
+        });
+
+        // Sort every image after the first one randomly
+        const firstImage = images[0];
+        const otherImages = Array.from(images).slice(1);
+        for (let i = otherImages.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));;
+            [otherImages[i], otherImages[j]] = [otherImages[j], otherImages[i]];
+        }
+    });
+</script>
+
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
 <script>
     document.querySelectorAll('pre > code').forEach((codeblock) => {

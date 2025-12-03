@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://merlijnvanholder.com/posts/">
 
 <script defer src="https://cloud.umami.is/script.js" data-website-id="f473994d-1f85-470b-9498-15230d15fc90"></script>
-<link crossorigin="anonymous" href="/assets/css/stylesheet.811b3a15ba5e7a104d3d3395785c2414c1a9761814c1f474d0f01470272eb66e.css" integrity="sha256-gRs6FbpeehBNPTOVeFwkFMGpdhgUwfR00PAUcCcutm4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7a3f501425c57398463cd5ca683b9465c45acb37155ca037b49277dc7d55ec05.css" integrity="sha256-ej9QFCXFc5hGPNXKaDuUZcRayzcVXKA3tJJ33H1V7AU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.gif" type="image/gif">
 <link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
 <link rel="icon" type="image/gif" sizes="32x32" href="favicon.gif">
@@ -253,6 +253,42 @@ The dawn escort mission is one of the prettier levels I built.
         }
     })
 
+</script>
+
+<script>
+    
+    
+
+    document.querySelectorAll('.gallery img').forEach((img) => {
+        img.style.display = 'none';
+    });
+
+    
+
+    document.querySelectorAll('.gallery').forEach((gallery) => {
+        const numToShow = 7;
+
+        const images = gallery.querySelectorAll('img');
+        const indices = [];
+        while (indices.length < Math.min(numToShow, images.length)) {
+            const randIndex = Math.floor(Math.random() * images.length);
+            if (!indices.includes(randIndex)) {
+                indices.push(randIndex);
+            }
+        }
+
+        indices.forEach((i) => {
+            images[i].style.display = 'inline-block';
+        });
+
+        
+        const firstImage = images[0];
+        const otherImages = Array.from(images).slice(1);
+        for (let i = otherImages.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));;
+            [otherImages[i], otherImages[j]] = [otherImages[j], otherImages[i]];
+        }
+    });
 </script>
 </body>
 
