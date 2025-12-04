@@ -15,7 +15,7 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
 <link rel="canonical" href="https://merlijnvanholder.com/readme/">
 
 <script defer src="https://cloud.umami.is/script.js" data-website-id="f473994d-1f85-470b-9498-15230d15fc90"></script>
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7a3f501425c57398463cd5ca683b9465c45acb37155ca037b49277dc7d55ec05.css" integrity="sha256-ej9QFCXFc5hGPNXKaDuUZcRayzcVXKA3tJJ33H1V7AU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.037b454fe497883dd9c2b5b6791c71f10426ec1a663bf51fee015b791bd13986.css" integrity="sha256-A3tFT&#43;SXiD3ZwrW2eRxx8QQm7BpmO/Uf7gFbeRvROYY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.gif" type="image/gif">
 <link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
 <link rel="icon" type="image/gif" sizes="32x32" href="favicon.gif">
@@ -200,7 +200,7 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
 <div id="readme">
 	<div class="favorites">
 		<div class="gallery">
-			<span><small>some of my all-time</small> Favorite Games</span>
+			<span><small>some of my</small> Favorite Games</span>
 			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/library_600x900.jpg" alt="Hunt: Showdown 1896" />
 			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2310/library_600x900.jpg" alt="Quake" />
 			<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900.jpg" alt="Half-Life" />
@@ -222,7 +222,7 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
 
 	<div class="favorites">
 		<div class="gallery">
-			<span><small>some of my all-time</small> Favorite Series</span>
+			<span><small>some of my</small> Favorite Series</span>
 			<img src="https://image.tmdb.org/t/p/original/AtKo2gANo2QBgZN9ebTAa8hXnvv.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/khZqmwHQicTYoS7Flreb9EddFZC.jpg" />
@@ -234,12 +234,13 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
 			<img src="https://image.tmdb.org/t/p/original/c2OijvbFEXBW1onbzuvENr4CGQB.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/1AZERr7KEJBpcchQ6vFcbUUC0Zw.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg" />
+			<img src="https://image.tmdb.org/t/p/original/ymaqpwLRaDwQIWII0lgqflTb10G.jpg" alt="True Detective" />
 		</div>
 	</div>
 
 	<div class="favorites">
 		<div class="gallery">
-			<span><small>some of my all-time</small> Favorite Movies</span>
+			<span><small>some of my</small> Favorite Movies</span>
 			<img src="https://image.tmdb.org/t/p/original/uJdt3xB5nt3o6uMrAFqsErAVDqq.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/VlO9JkOHoZkiPsGYwzGVw9rpbS.jpg" />
 			<img src="https://image.tmdb.org/t/p/original/qLX91FhHWCVrxDVsw0g2UD5c3Zk.jpg" />
@@ -248,6 +249,8 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
 			<img src="https://image.tmdb.org/t/p/original/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" />
 		</div>
 	</div>
+
+	<small><em>Fun fact, on each page load a random selection of my favorites shown here above.</em></small>
 </div>
     </main>
     
@@ -330,35 +333,17 @@ I&rsquo;ve been tinkering with games since elementary school, building levels fo
     
     
 
-    document.querySelectorAll('.gallery img').forEach((img) => {
-        img.style.display = 'none';
-    });
-
-    
-
-    document.querySelectorAll('.gallery').forEach((gallery) => {
-        const numToShow = 7;
-
-        const images = gallery.querySelectorAll('img');
-        const indices = [];
-        while (indices.length < Math.min(numToShow, images.length)) {
-            const randIndex = Math.floor(Math.random() * images.length);
-            if (!indices.includes(randIndex)) {
-                indices.push(randIndex);
-            }
+    document.querySelectorAll('#readme .gallery').forEach(gallery => {
+        let images = Array.from(gallery.querySelectorAll('img'));
+        let span = gallery.querySelector('span');
+        images.sort(() => Math.random() - 0.5);
+        gallery.innerHTML = '';
+        if (span) {
+            gallery.appendChild(span);
         }
-
-        indices.forEach((i) => {
-            images[i].style.display = 'inline-block';
+        images.forEach(img => {
+            gallery.appendChild(img);
         });
-
-        
-        const firstImage = images[0];
-        const otherImages = Array.from(images).slice(1);
-        for (let i = otherImages.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));;
-            [otherImages[i], otherImages[j]] = [otherImages[j], otherImages[i]];
-        }
     });
 </script>
 </body>
