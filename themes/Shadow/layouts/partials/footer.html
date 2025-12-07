@@ -98,24 +98,6 @@
 </script>
 {{- end }}
 
-<script>
-    // Randomly sort the order of images in each #readme .gallery
-    // Except the first span element
-
-    document.querySelectorAll('#readme .gallery').forEach(gallery => {
-        let images = Array.from(gallery.querySelectorAll('img'));
-        let span = gallery.querySelector('span');
-        images.sort(() => Math.random() - 0.5);
-        gallery.innerHTML = '';
-        if (span) {
-            gallery.appendChild(span);
-        }
-        images.forEach(img => {
-            gallery.appendChild(img);
-        });
-    });
-</script>
-
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
 <script>
     document.querySelectorAll('pre > code').forEach((codeblock) => {

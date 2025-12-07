@@ -49,7 +49,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 	display: none;
 }
 
-#readme .gallery img:nth-child(-n+15) {
+#readme .gallery img.shown {
 	display: block;
 }
 
@@ -71,9 +71,5 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 	#readme .gallery {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
-	}
-
-	#readme .gallery img:nth-child(n+10) {
-		display: none;
 	}
 }
