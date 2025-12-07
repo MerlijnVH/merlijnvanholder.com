@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://merlijnvanholder.com/">
 
 <script defer src="https://cloud.umami.is/script.js" data-website-id="f473994d-1f85-470b-9498-15230d15fc90"></script>
-<link crossorigin="anonymous" href="/assets/css/stylesheet.037b454fe497883dd9c2b5b6791c71f10426ec1a663bf51fee015b791bd13986.css" integrity="sha256-A3tFT&#43;SXiD3ZwrW2eRxx8QQm7BpmO/Uf7gFbeRvROYY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.24291c825ac204eacc877217e86ef668539fec727479427b36dbd4711435fbdc.css" integrity="sha256-JCkcglrCBOrMh3IX6G72aFOf7HJ0eUJ7NtvUcRQ1&#43;9w=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.gif" type="image/gif">
 <link rel="icon" type="image/gif" sizes="16x16" href="favicon.gif">
 <link rel="icon" type="image/gif" sizes="32x32" href="favicon.gif">
@@ -302,6 +302,7 @@ I started with a seafaring concept: you sail around collecting capsules drifting
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+<script src="/js/gallery.js"></script>
 
 <script>
     let menu = document.getElementById('menu');
@@ -362,24 +363,6 @@ I started with a seafaring concept: you sail around collecting capsules drifting
         }
     })
 
-</script>
-
-<script>
-    
-    
-
-    document.querySelectorAll('#readme .gallery').forEach(gallery => {
-        let images = Array.from(gallery.querySelectorAll('img'));
-        let span = gallery.querySelector('span');
-        images.sort(() => Math.random() - 0.5);
-        gallery.innerHTML = '';
-        if (span) {
-            gallery.appendChild(span);
-        }
-        images.forEach(img => {
-            gallery.appendChild(img);
-        });
-    });
 </script>
 </body>
 
